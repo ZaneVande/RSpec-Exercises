@@ -6,7 +6,7 @@ end
 
 def average_array(arr)
 
-   
+   arr.inject(0.0) { |sum, el| sum + el } / arr.length
 
 end
 
