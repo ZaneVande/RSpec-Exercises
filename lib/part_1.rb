@@ -24,9 +24,13 @@ end
 
 def alternating_case(str)
     new_str = str.split(" ")
-
-
-
-
-    return 
+    alternating = []
+    new_str.select.with_index do |word, idx|
+        if idx.even?
+            alternating << word.upcase
+        else
+            alternating << word.downcase
+        end
+    end
+    return alternating.join(" ")
 end
