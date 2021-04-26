@@ -41,7 +41,7 @@ end
 
 def power_of_two?(num)
 
-
+    num.to_s(2).count('1') == 1 #learning more and more on Ruby-doc.org, makes this simplier each time
 
 end
 
